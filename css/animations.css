@@ -1,0 +1,19 @@
+/*
+  Filename: animations.css
+
+  History:
+  02/14/23 - created file, animate title (GN)
+*/
+
+/* Title */
+#title {
+    animation-duration: 0.5s;
+    animation-name: fade-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

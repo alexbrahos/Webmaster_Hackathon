@@ -3,9 +3,33 @@
 
   History:
   02/13/23 - created file (GN)
+  02/14/23 - generic css (GN)
 */
 
 
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+/* 
+  GENERIC CSS
+*/
+/* Margin Rules */
+* + * {
+	margin-top: 1em;
 }
+p {
+	text-align: justify;
+}
+
+p + p {
+margin-top: 0;
+text-indent: 2em;
+}
+
+
+/* Title/Headers */
+#title {
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
