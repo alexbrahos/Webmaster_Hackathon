@@ -11,9 +11,12 @@
   GENERIC CSS
 */
 /* Margin Rules */
+/*
 * + * {
 	margin-top: 1em;
 }
+*/
+
 p {
 	text-align: justify;
 }
@@ -30,6 +33,33 @@ text-indent: 2em;
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  color: #1e2124;
 }
 
+
+/* Flexbox Containers */
+.listGamesFlexBox {
+  padding: 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  align-items: center;
+  align-content: space-around;
+
+  /*Mobile/Smaller Window Support*/
+  gap: 10px 20px;
+}
+
+
+/* Buttons */
+.selectGameBtn {
+  border-radius: 0.12em;
+  border-style: none;
+  background-color: #22303c;
+  font-size: x-large;
+  width: 5em;
+  height: 7em;
+}
 
