@@ -32,7 +32,6 @@ To keep user login and accredited information persistent, cookies are used. All 
 <br>1.1.1.1.1 Redirected to 2.1
 <br>1.1.2 Incorrect credentials 
 <br>1.1.2.1 Redirected to 1.1
-
 #### Main
 <br>2.1 Library
 <br>2.1.1 Select a game
@@ -41,7 +40,6 @@ To keep user login and accredited information persistent, cookies are used. All 
 <br>2.2.1 Redirected to STORE
 <br>2.3 Profile
 <br> Redirected to PROFILE
-
 #### Playing a Game 
 <br>3.1 Game loads 
 <br>3.1.1 User plays the game 
@@ -59,7 +57,6 @@ To keep user login and accredited information persistent, cookies are used. All 
 <br>3.1.1.2.1.1.1.1 Redirected to 2.1
 <br>3.1.1.2.1.1.2 User replays hame
 <br>3.1.1.2.1.1.2.1 Redirected to 3.1
-
 #### Store
 <br>4.1 Store loads
 <br>4.1.1 User selects a game
@@ -69,7 +66,6 @@ To keep user login and accredited information persistent, cookies are used. All 
 <br>4.1.1.1.1.1.1 Redirected to 4.1
 <br>4.1.1.1.2 User does not have enough in-game currency
 <br>4.1.1.1.2.1 Redirected to 4.1
-
 #### Profile 
 <br>5.1 Profile loads
 <br>5.1.1 User uploads image 
