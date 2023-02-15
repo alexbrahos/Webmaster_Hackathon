@@ -17,4 +17,5 @@ The games avaliable are:
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
 ### Data Structure
-To keep user login persistent, cookies are used. 
+To keep user login persistent, cookies are used. All user information is appropriately stored in a relational database of four tables. 
+[ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
