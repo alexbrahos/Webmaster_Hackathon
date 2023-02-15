@@ -49,10 +49,15 @@ text-indent: 2em;
   flex-wrap: wrap;
   justify-content: flex-start;
 
+  
+
   align-items: center;
   align-content: space-around;
 
-  background-color: bisque;
+  width: 50%;
+  margin: auto;
+
+  background-color: #4b5e7f;
 
   /*Mobile/Smaller Window Support*/
   gap: 10px 20px;
