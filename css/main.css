@@ -11,11 +11,15 @@
   GENERIC CSS
 */
 /* Margin Rules */
-/*
-* + * {
+
+button * + * {
 	margin-top: 1em;
 }
-*/
+
+p, h1, h2, h3 * + * {
+  margin-top: 2em;
+}
+
 
 p {
 	text-align: justify;
@@ -48,6 +52,8 @@ text-indent: 2em;
   align-items: center;
   align-content: space-around;
 
+  background-color: bisque;
+
   /*Mobile/Smaller Window Support*/
   gap: 10px 20px;
 }
@@ -55,11 +61,20 @@ text-indent: 2em;
 
 /* Buttons */
 .selectGameBtn {
-  border-radius: 0.12em;
-  border-style: none;
-  background-color: #22303c;
+  border-right: none;
+  border-bottom: none;
+  border-left-width: 0.1em;
+  border-left-color: #1e2124;
+  background-color: #4c4b5a;
   font-size: x-large;
   width: 5em;
   height: 7em;
+}
+
+.selectGameHover {
+  opacity: 0;
+  width: 104%;
+  height: 100%;
+  top: 0;
 }
 
