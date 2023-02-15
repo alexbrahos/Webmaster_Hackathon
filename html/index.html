@@ -1,19 +1,74 @@
+<!--
+    Filename: index.html
+    HTML for the Main Page
+    
+    History:
+    02/14/23 - main page design (GN)
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <!--Google Font APIs-->
+    <!--Title Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press%20Start%202P">
+    <!--Regular Fonts-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Signika">
+    <style>
+      #title {
+        font-family: 'Press Start 2P';
+      }
+
+      body, button {
+        font-family: 'Signika';
+      }
+    </style>
+
+    <title>Alpha Arcade</title>
+
 </head>
 <body>
-    <h2>
-        HELLO, WORLD!
-    </h2>
-    <p>
-        hihihi i say hayayayayay
-    </p>
-    <p>
-        lol
-    </p>
+    <!--Main Title-->
+    <div class="header">
+        <h1 id="title">Arcade</h1>
+    </div>
+
+    
+    <div>
+        <h2>
+            HELLO, WORLD!
+        </h2>
+        <p>
+            first pargraph
+        </p>
+        <p>
+            second paragraph onwards is indented
+        </p>
+
+        <!--Library Buttons-->
+        <div class="listGamesFlexBox">
+            <button class="selectGameBtn">
+                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
+            </button>
+            <button class="selectGameBtn">
+                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
+            </button>
+            <button class="selectGameBtn">
+                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
+            </button>
+            <button class="selectGameBtn">
+                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
+            </button>
+        </div>
+    </div>
 </body>
 </html>
