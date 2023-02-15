@@ -1,0 +1,82 @@
+<!--
+    Filename: login.html
+    HTML for the Login Page
+    
+    History:
+    02/15/23 - create file & format form (GN)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <!--Google Font APIs-->
+    <!--Title Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press%20Start%202P">
+    <!--Regular Fonts-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Signika">
+    <style>
+      #title {
+        font-family: 'Press Start 2P';
+      }
+
+      body, button {
+        font-family: 'Signika';
+      }
+    </style>
+
+    <title>Alpha Arcade</title>
+
+</head>
+<body>
+    <!--Main Title-->
+    <div class="header">
+        <h1 id="title">Arcade</h1>
+    </div>
+
+    <!--Login Form-->
+    <div class="formWrap">
+
+        <form action="">
+            <div class="formHeader">
+                <h1>Login</h1>
+            </div>
+
+            <!--Username field-->
+            <div class="formField">
+                <label for="username">Username</label>
+                <input type="text" class="formInput" name="username" id="username">
+            </div>
+
+            <!--Password field-->
+            <div class="formField">
+                <label for="password">Password</label>
+                <input type="password" class="formInput" name="password" id="password">
+                <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
+            </div>
+
+            <!--Submit button-->
+            <input type="submit" id="submitBtn" value="Submit" class="submitbtn">
+       
+            <!--Sign up button-->
+            <div class="formFooter">
+                <a href="../html/index.html">Create an account</a>
+            </div>
+        </form>
+
+    </div>
+
+
+    <!--Load the javascript-->
+    <script src="../js/login.js"></script> 
+</body>
+</html>
