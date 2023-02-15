@@ -4,6 +4,7 @@
     
     History:
     02/14/23 - main page design (GN)
+    02/15/23 - added hamburger menu (AB)
 -->
 
 <!DOCTYPE html>
@@ -38,22 +39,32 @@
 </head>
 <body>
     <!--Main Title-->
-    <div class="header">
-        <h1 id="title">Arcade</h1>
-    </div>
+    <header class="header">
+        <!--<h1 id="title">Arcade</h1>-->
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Bruh1</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Log out</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
     
     <div>
-        <h2>
-            HELLO, WORLD!
-        </h2>
-        <p>
-            first pargraph
-        </p>
-        <p>
-            second paragraph onwards is indented
-        </p>
-
+        
         <!--Library Buttons-->
         <div class="listGamesFlexBox">
             <button class="selectGameBtn">
@@ -69,7 +80,8 @@
                 <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
             </button>
         </div>
-        
+        <script src="../js/index.js"></script>
     </div>
+
 </body>
 </html>
