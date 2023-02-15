@@ -1,10 +1,10 @@
 # Webmaster Hackathon
+[Alpha Arcade](www.google.com)
 
 ## Prototyping
-## [Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
-## [Database Structure](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
-### COLLABORATERS❗️❗️
-Notes on testing:
+### [Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
+### [Database Structure](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
+#### NOTE TO COLLABORATERS❗️❗️
 Clone the repository / download the zip. Then, open "index.html" to experience a static version of the website. 
 
 ## Documentation 
@@ -15,14 +15,18 @@ The games avaliable are:
 1. Tap (free)
 2. Rock, Paper, Scissors
 3. Tic-Tac-Toe
+4. Color Game
+5. Pac-Man
+
+In other words, *Alpha Arcade* seeks to create a virtual arcade where users can experience multiple games all on one site. 
 
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
 ### Data Structure
-To keep user login and accredited information persistent, cookies are used. All user information is appropriately stored in a relational database of four tables. 
+To keep user login and accredited information persistent, cookies are used. All user information is appropriately stored in a relational database of four tables. The database was designed to be at least second normal form.  
 <br>
-[ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
+[Click here for the ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
 
 ### Flow 
 #### Login 
