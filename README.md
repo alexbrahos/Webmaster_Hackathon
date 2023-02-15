@@ -17,4 +17,4 @@ The games avaliable are:
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
 ### Data Structure
-
+To keep user login persistent, cookies are used. 
