@@ -44,8 +44,8 @@ text-indent: 2em;
 #title {
   font-size: xxx-large;
   text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #1e2124;
 }
 
@@ -92,10 +92,17 @@ text-indent: 2em;
   top: 0;
 }
 
+/*Header menu
+  Needed in:
+    Library
+    Profile
+    Games
+*/
 .header{
   border-bottom: 1px solid #E2E8F0
 }
 
+/*Entire header bar*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -103,10 +110,12 @@ text-indent: 2em;
   padding: 1rem 1.5rem;
 }
 
+/*Hamburger icon*/
 .hamburger{
   display: none;
 }
 
+/*Bars that make up hamburger icon*/
 .bar {
   display: block;
   width: 25px;
@@ -117,16 +126,7 @@ text-indent: 2em;
   background-color: #101010;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  margin-left: 5rem;
-}
-
+/*Text inside hamburger menu*/
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
@@ -137,17 +137,23 @@ text-indent: 2em;
   color: #482ff7;
 }
 
+/*Clickable logo*/
 .nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #482ff7;
+  display: block;
+  width: 40px;
+  height: 40px;
+  scale: 15%;
+  margin-top: -60px;
 }
 
+/*Inside of Hamburger Menu*/
 @media only screen {
+  /*General properties*/
   .nav-menu {
+    display: flex;
     position: fixed;
     right: -110%;
-    top: 3.7rem;
+    top: 4.75rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -157,29 +163,37 @@ text-indent: 2em;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.175);
   }
 
+  /*Entire box of menu*/
   .nav-menu.active {
     right: 0;
     width: 150px;
   }
 
+  /*Each row of menu*/
   .nav-item {
     margin: 1rem 3rem 1rem 1rem;
   }
 
+  /*Hamburger icon*/
   .hamburger {
     display: block;
     cursor: pointer;
   }
 
+  /*Animation of Hamburger turning to X*/
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
 
   .hamburger.active .bar:nth-child(1) {
+    transition: 0.3s;
     transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
+    transition: 0.3s;
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/*End Header*/
