@@ -3,9 +3,78 @@
 
   History:
   02/13/23 - created file (GN)
+  02/14/23 - generic css (GN)
 */
 
 
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+/* 
+  GENERIC CSS
+*/
+/* Margin Rules */
+
+button * + * {
+	margin-top: 1em;
 }
+
+p, h1, h2, h3 * + * {
+  margin-top: 2em;
+}
+
+
+p {
+	text-align: justify;
+}
+
+p + p {
+margin-top: 0;
+text-indent: 2em;
+}
+
+
+/* Title/Headers */
+#title {
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: #1e2124;
+}
+
+
+/* Flexbox Containers */
+.listGamesFlexBox {
+  padding: 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  align-items: center;
+  align-content: space-around;
+
+  background-color: bisque;
+
+  /*Mobile/Smaller Window Support*/
+  gap: 10px 20px;
+}
+
+
+/* Buttons */
+.selectGameBtn {
+  border-right: none;
+  border-bottom: none;
+  border-left-width: 0.1em;
+  border-left-color: #1e2124;
+  background-color: #4c4b5a;
+  font-size: x-large;
+  width: 5em;
+  height: 7em;
+}
+
+.selectGameHover {
+  opacity: 0;
+  width: 104%;
+  height: 100%;
+  top: 0;
+}
+
