@@ -4,39 +4,29 @@
  * History:
  * 02/15/23 - create file and use jQuery validation (GN)
  */
-
 /*
-    Events
+    #createAccount Form Validation
 */
-// Toggle Password
-function togglePassword() {
-    var x = document.getElementById("password");
-    
-    if(x.type === "password") {
-        x.type = "text";
-    } 
-    else {
-        x.type = "password";
-    }
-}
+$(document).ready(function() {
+    /*UI Library Definitions*/
+    $("input[type='submit']").button();
 
-function togglePassword(id1, id2) {
-    var x = document.getElementById(id1);
-    var y = document.getElementById(id2);
-    
-    // Toggle two passwords fields
-    if(x.type === "password" && y.type === "password") {
-        x.type = "text";
-        y.type = "text";
-    } 
-    else {
-        x.type = "password";
-        y.type = "password";
-    }
-}
+    $.validator.setDefaults({
 
+        /*Submit Event Handler & Data Scraping*/
+        submitHandler: function() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var confirmPassword = $("#confirmPassword").val();
 
-// Clicking the title 
-function clickTitle() {
-    window.location.href = "../html/login.html";
-}
+            alert("he");
+            
+            // output data to output area
+            $("#outputField").append("<br>Username: " + username);
+            $("#outputField").append("<br>Password: " + password);
+            $("#outputField").append("<br>Confirm: " + confirmPassword);
+
+        }, // end submitHandler
+
+    }); // end validator.setDefaults
+}); // end (document).ready
