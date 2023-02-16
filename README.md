@@ -24,7 +24,7 @@ In other words, *Alpha Arcade* seeks to create a virtual arcade where users can 
 #### Framework
 *Alpha Arcade* uses the Django framework hosted on [pythonanywhere](https://www.pythonanywhere.com/). Django allows for CRUD operations to be done on ALPHA, an Oracle database (see *Data Structure* for more information); however, *Alpha Arcade* will only require for the Create, Read, and Update operations. 
 #### Client-Side
-The front end is created using the standard web development HTML/CSS/JavaScript languages. The front-end was created from scratch with no assistance from a CSS library or JavaScript extension. The Create Account page uses jQuery for client-side validation.  
+The front end is created using the standard web development HTML/CSS/JavaScript languages. The front-end was created from scratch with no assistance from a CSS library or JavaScript extension. The Create Account page uses jQuery for client-side validation; the back end will need to check that the username does not exist.
 #### Server-Side
 To keep user login credentials persistent through a session, cookies are used in tandem with the ALPHA database. While most objects on the website are created and shown by the Client-Side, objects specific to user permissions are managed by the back end. For example, the library of games will only show games the user has permissions for.
 
@@ -35,6 +35,8 @@ There is only one type of user—the players. Players may want to create an acco
 To keep user login and accredited information persistent, cookies are used. All user information is appropriately stored in a relational database of four tables. The database was designed to be at least second normal form.  
 <br>
 [Click here for the ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
+<br>
+Note: The USER table's primary key is a username, a unique charvar of no more than 25 characters. Because users cannot delete accounts, USER data entries will last forever. The implications are that once a username is used, it cannot be used again. 
 
 ### Flow 
 #### Login 
