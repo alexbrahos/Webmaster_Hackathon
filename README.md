@@ -20,9 +20,14 @@ The games avaliable are:
 
 In other words, *Alpha Arcade* seeks to create a virtual arcade where users can experience multiple games all on one site. 
 
-###  Framework
-*Alpha Arcade* uses the Django framework hosted on [pythonanywhere](https:://www.pythonanywhere.com). Django allows for CRUD operations to be done on ALPHA, an Oracle database (see *Data Structure* for more information); however, *Alpha Arcade* will only require for the Create, Read, and Update operations. 
- 
+###  Specifics
+#### Framework
+*Alpha Arcade* uses the Django framework hosted on [pythonanywhere](https://www.pythonanywhere.com/). Django allows for CRUD operations to be done on ALPHA, an Oracle database (see *Data Structure* for more information); however, *Alpha Arcade* will only require for the Create, Read, and Update operations. 
+#### Client-Side
+The front end is created using the standard web development HTML/CSS/JavaScript languages. The front-end was created from scratch with no assistance from a CSS library or JavaScript extension. The Create Account page uses jQuery for client-side validation.  
+#### Server-Side
+To keep user login credentials persistent through a session, cookies are used in tandem with the ALPHA database. While most objects on the website are created and shown by the Client-Side, objects specific to user permissions are managed by the back end. For example, the library of games will only show games the user has permissions for.
+
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
