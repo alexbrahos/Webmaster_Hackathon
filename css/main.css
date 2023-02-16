@@ -39,17 +39,6 @@ margin-top: 0;
 text-indent: 2em;
 }
 
-
-/* Title/Headers */
-#title {
-  font-size: xxx-large;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #1e2124;
-}
-
-
 /* Flexbox Containers */
 .listGamesFlexBox {
   padding: 10em;
@@ -105,7 +94,16 @@ text-indent: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 3rem 1.5rem;
+}
+
+/*Title*/
+#title {
+  font-size: 72px;
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: -1em;
+  color: #1e2124;
 }
 
 /*Hamburger icon*/
@@ -140,8 +138,27 @@ text-indent: 2em;
   display: block;
   width: 40px;
   height: 40px;
-  scale: 15%;
-  margin-top: -60px;
+  scale: 12.5%;
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+}
+
+/*Coin image*/
+#coinImg {
+  display: block;
+  position: fixed;
+  right: 29%;
+  margin-bottom: 2rem;
+  width: 40px;
+  height: 40px;
+  scale: 7.5%
+}
+
+/*Money*/
+#walletAmt {
+  position: fixed;
+  right: 22.5%;
+
 }
 
 /*Inside of Hamburger Menu*/
@@ -151,7 +168,7 @@ text-indent: 2em;
     display: flex;
     position: fixed;
     right: -110%;
-    top: 4.75rem;
+    top: 6.9rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -176,6 +193,8 @@ text-indent: 2em;
   .hamburger {
     display: block;
     cursor: pointer;
+    scale: 200%;
+    margin-right: 2rem;
   }
 
   /*Animation of Hamburger turning to X*/
