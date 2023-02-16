@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/animationTitleUnique.css">
 
     <!--Google Font APIs-->
     <!--Title Fonts-->
@@ -40,7 +41,9 @@
 <body>
     <!--Main Title-->
     <div class="header">
+        <br><br>
         <h1 id="title">Arcade</h1>
+        <br><br>
     </div>
 
     <!--Login Form-->
@@ -63,14 +66,15 @@
                 <input type="password" class="formInput" name="password" id="password">
                 <br>
                 <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
-            
-                <br><br>
-                <a id="createAccountLink" href="../html/index.html">Create an account</a>
+                
+                <!--Create Account hyperlink-->
+                <p>
+                    Don't have an account? <a id="createAccountLink" href="../html/createAccount.html"><u>Create an account</u></a>
+                </p>
+               
             </div>
 
-            
        
-            <!--Sign up button-->
             <div class="formFooter">
                 <!--Submit button-->
                 <input type="submit" id="submitBtn" value="Submit" class="submitbtn">
@@ -80,7 +84,7 @@
     </div>
 
 
-    <!--Load the javascript-->
+    <!--Load the JavaScript-->
     <script src="../js/login.js"></script> 
 </body>
 </html>
