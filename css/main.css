@@ -4,6 +4,7 @@
   History:
   02/13/23 - created file (GN)
   02/14/23 - generic css (GN)
+  02/15/23 - added hamburger menu (AB)
 */
 
 
@@ -25,6 +26,14 @@ p {
 	text-align: justify;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 p + p {
 margin-top: 0;
 text-indent: 2em;
@@ -35,8 +44,8 @@ text-indent: 2em;
 #title {
   font-size: xxx-large;
   text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #1e2124;
 }
 
@@ -80,3 +89,109 @@ text-indent: 2em;
   height: 100%;
   top: 0;
 }
+
+/*Header menu
+  Needed in:
+    Library
+    Profile
+    Games
+*/
+.header{
+  border-bottom: 1px solid #E2E8F0
+}
+
+/*Entire header bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/*Hamburger icon*/
+.hamburger{
+  display: none;
+}
+
+/*Bars that make up hamburger icon*/
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all -.3s ease-in-out;
+  background-color: #101010;
+}
+
+/*Text inside hamburger menu*/
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+/*Clickable logo*/
+.nav-logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  scale: 15%;
+  margin-top: -60px;
+}
+
+/*Inside of Hamburger Menu*/
+@media only screen {
+  /*General properties*/
+  .nav-menu {
+    display: flex;
+    position: fixed;
+    right: -110%;
+    top: 4.75rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.175);
+  }
+
+  /*Entire box of menu*/
+  .nav-menu.active {
+    right: 0;
+    width: 150px;
+  }
+
+  /*Each row of menu*/
+  .nav-item {
+    margin: 1rem 3rem 1rem 1rem;
+  }
+
+  /*Hamburger icon*/
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  /*Animation of Hamburger turning to X*/
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transition: 0.3s;
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transition: 0.3s;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/*End Header*/
