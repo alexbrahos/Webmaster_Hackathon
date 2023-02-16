@@ -6,7 +6,7 @@
 ### [Database Structure](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
 #### NOTE TO COLLABORATERS❗️❗️
 Clone the repository / download the zip. Then, open "index.html" to experience a static version of the website. 
-** Make sure to clear your cookies often, or certain browsers (mainly Goole Chrome) will not reflect your changes.**
+**Make sure to clear your cookies often, or certain browsers (mainly Goole Chrome) will not reflect your changes.**
 
 ## Documentation 
 ### Summary
