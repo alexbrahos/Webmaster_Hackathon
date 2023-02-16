@@ -30,8 +30,6 @@ To keep user login credentials persistent through a session, cookies are used in
 #### Security
 A side effect of allowing the users to input their information in the Create Account page is that the chance for a SQL injection increases. Because Django is the framework, the Django Object Relational Mapping (ORM) is available, allowing for default protection against SQL injections. All database operations are done using the Django API.
 
-Outside of Create Account, all Create or Update operations limit the user to buttons to mitigate the attacks. Read operations are read from a view.
-
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
