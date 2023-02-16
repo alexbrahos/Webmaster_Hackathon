@@ -8,25 +8,19 @@
     #createAccount Form Validation
 */
 $(document).ready(function() {
-    /*UI Library Definitions*/
-    $("input[type='submit']").button();
-
     $.validator.setDefaults({
-
-        /*Submit Event Handler & Data Scraping*/
         submitHandler: function() {
             var username = $("#username").val();
             var password = $("#password").val();
-            var confirmPassword = $("#confirmPassword").val();
-
-            alert("he");
+            var confirmPassword = $("confirmPassword").val();
             
-            // output data to output area
-            $("#outputField").append("<br>Username: " + username);
+            $("#outputField").append("<br Username: " + username);
             $("#outputField").append("<br>Password: " + password);
-            $("#outputField").append("<br>Confirm: " + confirmPassword);
+            $("#outputField").append("<br>Confirm Password: " + confirmPassword);
 
+            alert(username);
         }, // end submitHandler
+    }); // end setDefaults
 
-    }); // end validator.setDefaults
+    
 }); // end (document).ready

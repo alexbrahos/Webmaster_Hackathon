@@ -1,7 +1,8 @@
 <!--
     Filename: createAccount.html
     
-    jQuery version: 1.19.4
+    jQuery Validation version: 1.19.4
+    jQuery version: 3.6.3
 
     History:
     02/15/23 - create file, format form, use jQuery for validation (GN)
@@ -15,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--jQuery Validation Plug-In-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/jQuery Validation/dist/jquery.validate.js"></script>
     <script src="../js/jQuery Validation/dist/jquery.validate.min.js"></script>
 
     <!--CSS-->
@@ -59,7 +62,7 @@
     <!--Create Account Form-->
     <div class="formWrap">
 
-        <form onsubmit="return false" action="" name="createAccount" id="createAccount">
+        <form action="" name="createAccount" id="createAccount">
             <div class="formHeader">
                 <h1>Create Account</h1>
             </div>
@@ -67,19 +70,19 @@
             <!--Username field-->
             <div class="formField">
                 <label for="username">Username</label>
-                <input type="text" class="formInput" name="username" id="username">
+                <input type="text" class="formInput" name="username" id="username" required>
             </div>
 
             <!--Password field-->
             <div class="formField">
                 <label for="password">Password</label>
-                <input type="password" class="formInput" name="password" id="password">
+                <input type="password" class="formInput" name="password" id="password" required>
             </div>
 
             <!--Confirm Password field-->
             <div class="formField">
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="password" class="formInput" name="confirmPassword" id="confirmPassword">
+                <input type="password" class="formInput" name="confirmPassword" id="confirmPassword" required>
                 <br>
                 <input type="checkbox" id="showPassword" onclick="togglePassword('password', 'confirmPassword')"> Show Password
             </div>
@@ -93,7 +96,7 @@
     </div>
 
 
-    <p id="outputField" >Output Area: </p>
+    <p id="outputField" >#outputField: </p>
 
 
     <!--Load the JavaScript-->
