@@ -31,7 +31,7 @@ The jQuery plug-in version used is 1.19.5.
 To keep user login credentials persistent through a session, cookies are used in tandem with the ALPHA database. While most objects on the website are created and shown by the Client-Side, objects specific to user permissions are managed by the back end. For example, the library of games will only show games the user has permissions for.
 #### Security
 A side effect of allowing the users to input their information in the Create Account page is that the chance for a SQL injection increases. Because Django is the framework, the Django Object Relational Mapping (ORM) is available, allowing for default protection against SQL injections. All database operations are done using the Django API.
-
+<br>
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
@@ -42,7 +42,7 @@ To keep user login and accredited information persistent, cookies are used. All 
 <br>
 The USER table's primary key is a username, a unique charvar of no more than 25 characters. Because users cannot delete accounts, USER data entries will last forever. The implications are that once a username is used, it cannot be used again. The password field is a charvar of no more than length 50, and by client-side validation will have at least a combination of numbers and letters. 
 
-### Flow 
+### Work Flow 
 #### Login 
 <br>1.1 Has an Account
 <br>1.1.1 Correct credentials 
