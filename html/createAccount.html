@@ -1,7 +1,8 @@
 <!--
     Filename: createAccount.html
-    HTML for the Create Account Page
     
+    jQuery version: 1.19.4
+
     History:
     02/15/23 - create file, format form, use jQuery for validation (GN)
 -->
@@ -12,6 +13,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery Validation Plug-In-->
+    <script src="../js/jQuery Validation/dist/jquery.validate.min.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/main.css">
@@ -55,7 +59,7 @@
     <!--Create Account Form-->
     <div class="formWrap">
 
-        <form action="">
+        <form onsubmit="return false" action="" name="createAccount" id="createAccount">
             <div class="formHeader">
                 <h1>Create Account</h1>
             </div>
@@ -83,14 +87,16 @@
        
             <div class="formFooter">
                 <!--Submit button-->
-                <input type="submit" id="submitBtn" value="Create Account" class="submitbtn">
+                <input type="submit" id="submitBtn" value="Create Account"  class="submitbtn">
             </div>
         </form>
-
     </div>
 
 
-    <!--Load the javascript-->
+    <p id="outputField" >Output Area: </p>
+
+
+    <!--Load the JavaScript-->
     <script src="../js/login.js"></script> 
     <script src="../js/createAccount.js"></script>
 </body>
