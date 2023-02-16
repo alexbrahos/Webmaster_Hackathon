@@ -8,25 +8,61 @@
     #createAccount Form Validation
 */
 $(document).ready(function() {
-    /*UI Library Definitions*/
-    $("input[type='submit']").button();
 
+    /*Define Form Functionality*/
     $.validator.setDefaults({
-
-        /*Submit Event Handler & Data Scraping*/
         submitHandler: function() {
             var username = $("#username").val();
             var password = $("#password").val();
-            var confirmPassword = $("#confirmPassword").val();
-
-            alert("he");
-            
-            // output data to output area
-            $("#outputField").append("<br>Username: " + username);
-            $("#outputField").append("<br>Password: " + password);
-            $("#outputField").append("<br>Confirm: " + confirmPassword);
-
+            var confirmPassword = $("confirmPassword").val();
         }, // end submitHandler
 
-    }); // end validator.setDefaults
+        /*Validation Error Messages*/
+        errorPlacement: function(error, element) {
+            error.insertAfter(element);
+        } 
+    }); // end setDefaults
+
+    /*Validation*/
+    $("#createAccount").validate({
+        /*Custom Rules*/
+        rules: {
+            username: 
+            {
+                required: true,
+                minlength: 5,
+                maxlength: 25
+            },
+            password:
+            {
+                required: true,
+                minlength: 6,
+                maxlength: 25
+            },
+            confirmPassword:
+            {
+                required: true, 
+                equalTo: "#password"
+            },
+        }, // end custom rules
+
+        messages: {
+            username: 
+            {
+                minlength: "Must be at least 5 characters",
+                maxlength: "Must be less than 25 characters"
+            },
+            password: 
+            {
+                minlength: "Must be at least 6 characters",
+                maxlength: "Must be less than 25 characters",
+            },
+            confirmPassword:
+            {
+                equalTo: "Passwords do not match!"
+            },
+        }, // end messages
+    }); // end #createAccount validation
+
+    
 }); // end (document).ready
