@@ -1,0 +1,15 @@
+/*
+  Filename: animationTitleUnique.css
+
+  History:
+  02/15/23 - created file and unique animation  (GN)
+*/
+
+/* Title animations unqiue to certain pages */
+#title {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(50, end) !important;
+  animation-fill-mode: forwards;
+}

@@ -1,8 +1,8 @@
 /*
- * Filename: login.js
+ * Filename: createAccount.js
  *
  * History:
- * 02/15/23 - create file and add event definitions (GN)
+ * 02/15/23 - create file and use jQuery validation (GN)
  */
 
 /*

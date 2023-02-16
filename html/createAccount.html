@@ -1,9 +1,9 @@
 <!--
-    Filename: login.html
-    HTML for the Login Page
+    Filename: createAccount.html
+    HTML for the Create Account Page
     
     History:
-    02/15/23 - create file & format form (GN)
+    02/15/23 - create file, format form, use jQuery for validation (GN)
 -->
 
 <!DOCTYPE html>
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="../css/animationTitleUnique.css">
 
     <!--Google Font APIs-->
     <!--Title Fonts-->
@@ -25,6 +24,8 @@
     <!--Regular Fonts-->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Signika">
+
+    <!--Inline CSS-->
     <style>
       #title {
         font-family: 'Press Start 2P';
@@ -32,6 +33,11 @@
 
       body, button, input {
         font-family: 'Signika';
+      }
+      
+      #submitBtn {
+        width: 55%;
+        margin-left: 20%;
       }
     </style>
 
@@ -42,16 +48,16 @@
     <!--Main Title-->
     <div class="header">
         <br><br>
-        <h1 id="title">Arcade</h1>
+        <h1 id="title" onclick="clickTitle()">Arcade</h1>
         <br><br>
     </div>
 
-    <!--Login Form-->
+    <!--Create Account Form-->
     <div class="formWrap">
 
         <form action="">
             <div class="formHeader">
-                <h1>Login</h1>
+                <h1>Create Account</h1>
             </div>
 
             <!--Username field-->
@@ -64,20 +70,20 @@
             <div class="formField">
                 <label for="password">Password</label>
                 <input type="password" class="formInput" name="password" id="password">
+            </div>
+
+            <!--Confirm Password field-->
+            <div class="formField">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="formInput" name="confirmPassword" id="confirmPassword">
                 <br>
-                <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
-                
-                <!--Create Account hyperlink-->
-                <p>
-                    Don't have an account? <a id="createAccountLink" href="../html/createAccount.html"><u>Create an account</u></a>
-                </p>
-               
+                <input type="checkbox" id="showPassword" onclick="togglePassword('password', 'confirmPassword')"> Show Password
             </div>
 
        
             <div class="formFooter">
                 <!--Submit button-->
-                <input type="submit" id="submitBtn" value="Submit" class="submitbtn">
+                <input type="submit" id="submitBtn" value="Create Account" class="submitbtn">
             </div>
         </form>
 
@@ -86,5 +92,6 @@
 
     <!--Load the javascript-->
     <script src="../js/login.js"></script> 
+    <script src="../js/createAccount.js"></script>
 </body>
 </html>
