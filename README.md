@@ -1,5 +1,5 @@
 # Webmaster Hackathon
-[Alpha Arcade](http://alexbrahos.pythonanywhere.com/)
+Click this link to be redirected to the website: [Alpha Arcade](http://alexbrahos.pythonanywhere.com/)
 
 ## Prototyping
 ### [Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
