@@ -31,6 +31,8 @@ The jQuery plug-in version used is 1.19.5.
 To keep user login credentials persistent through a session, cookies are used in tandem with the ALPHA database. While most objects on the website are created and shown by the Client-Side, objects specific to user permissions are managed by the back end. For example, the library of games will only show games the user has permissions for.
 #### Security
 A side effect of allowing the users to input their information in the Create Account page is that the chance for a SQL injection increases. Because Django is the framework, the Django Object Relational Mapping (ORM) is available, allowing for default protection against SQL injections. All database operations are done using the Django API.
+#### Images 
+To keep the theme of the website persistent, all images were made by hand. Examples of this are the logo/favicon, the buttons, and the game images.
 <br>
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
