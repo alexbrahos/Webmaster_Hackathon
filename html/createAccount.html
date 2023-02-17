@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/createAccount.css">
 
     <!--Google Font APIs-->
     <!--Title Fonts-->
@@ -55,7 +56,7 @@
     <!--Main Title-->
     <div class="header">
         <br><br>
-        <h1 id="title" onclick="clickTitle()">Arcade</h1>
+        <h1 id="title" style="padding-top:1em; padding-bottom:1em;" onclick="clickTitle()">Arcade</h1>
         <br><br>
     </div>
 
@@ -87,6 +88,16 @@
                 <input type="checkbox" id="showPassword" onclick="togglePassword('password', 'confirmPassword')"> Show Password
             </div>
 
+            <!--Password Strength Validation-->
+            <div id="passwordStrength">
+                <h4>Password must meet the following requirements</h4>
+                <ul>
+                    <li id="letter" class="invalid">At least <b>one letter</b></li>
+                    <li id="number" class="invalid">At least <b>one number</b></li>
+                    <li id="length" class="invalid">At least <b>8 characters</b></li>
+                </ul>
+            </div>
+
        
             <div class="formFooter">
                 <!--Submit button-->
@@ -95,7 +106,7 @@
         </form>
     </div>
 
-    
+
     <!--Load the JavaScript-->
     <script src="../js/login.js"></script> 
     <script src="../js/createAccount.js"></script>
