@@ -5,12 +5,47 @@
   02/16/23 - created file and format the password validation widget  (GN)
 */
 
-/*Password Validation*/
+/*Password Requirements Box*/
 li, ul {
     font-size: medium;
     list-style-type: none;
+    color: #b2b4b2;
+    margin-left: -1em 5%;
 }
 
-b {
+h4 {
+    color: #b2b4b2;
+    text-align: center;
+}
+
+#passwordStrength {
+    width: 60%;
+    padding: none;
+    background: #2a2a2a;
+    border: 1px solid #2a2a2a;
+    margin: 0 auto;
+    border-radius: 1.2em;
+    position: relative;
+    display: none;
+    margin-bottom: 1em;
+}
+
+#passwordStrength::before {
+    display: block;
+    content: "\25B2";
+    position: absolute;
+    top: -13%;
+    left: 45%;
+    font-size: 170%;
+    line-height: 100%;
+    color: #2a2a2a;
+}
+
+.invalid {
     color: #F7BA0B;
+}
+
+.valid {
+    color: #5f4705;
+    text-decoration: line-through 2px;
 }
