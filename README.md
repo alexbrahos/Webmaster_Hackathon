@@ -38,9 +38,7 @@ To keep the theme of the website persistent, all images were made by hand. Examp
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. 
 
 ### Data Structure
-To keep user login and accredited information persistent, cookies are used. All user information is appropriately stored in a relational database of four tables. The database was designed to be at least second normal form. 
-<br>
-[Click here for the ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
+To keep user login and accredited information persistent, cookies are used. All user information is appropriately stored in a relational database of four tables. The database was designed to be at least second normal form. [Click here for the ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
 <br>
 The USER table's primary key is a username, a unique charvar of no more than 25 characters. Because users cannot delete accounts, USER data entries will last forever. The implications are that once a username is used, it cannot be used again. The password field is a charvar of no more than length 50, and by client-side validation will have at least a combination of numbers and letters. 
 
