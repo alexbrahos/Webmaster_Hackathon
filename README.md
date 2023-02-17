@@ -10,7 +10,8 @@ Clone the repository / download the zip. Then, open "index.html" to experience a
 
 ## Documentation 
 ### Summary
-*Alpha Arcade* is a web application that allows for the user to play games. Users may want to login to keep log of their money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across updated version of browsers and screen sizes; however, older browsers were not tested. 
+*Alpha Arcade* is a web application that allows for the user to play games. Users may want to login to keep log of their money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across updated version of browsers and screen sizes; older browsers were not tested and may have problems supporting certain design choices made. 
+
 <br>
 The games avaliable are:
 1. Tap (free)
