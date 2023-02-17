@@ -8,7 +8,6 @@
     #createAccount Form Validation
 */
 $(document).ready(function() {
-
     /*Define Form Functionality*/
     $.validator.setDefaults({
         submitHandler: function() {
@@ -63,6 +62,4 @@ $(document).ready(function() {
             },
         }, // end messages
     }); // end #createAccount validation
-
-    
 }); // end (document).ready
