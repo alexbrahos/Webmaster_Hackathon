@@ -5,7 +5,9 @@
   02/13/23 - created file (GN)
   02/14/23 - generic css (GN)
   02/15/23 - added hamburger menu (AB)
-*/
+  02/16/23 - added Firefox directives for FF support (GN)
+  02/16/23 - buttons are now in rows of 3 (GN)
+  */
 
 
 /* 
@@ -54,9 +56,8 @@ text-indent: 2em;
   margin: auto;
 
   background-color: #4b5e7f;
-
-  /*Mobile/Smaller Window Support*/
-  gap: 10px 20px;
+  gap: 10%;
+  row-gap: 20px;
 }
 
 
@@ -68,8 +69,8 @@ text-indent: 2em;
   border-left-color: #1e2124;
   background-color: #4c4b5a;
   font-size: x-large;
-  width: 6em;
-  height: 8em;
+  width: 25%;
+  height: 100%;
 }
 
 .selectGameHover {
@@ -99,11 +100,14 @@ text-indent: 2em;
 
 /*Title*/
 #title {
-  font-size: 72px;
+  font-size: 350%;
   text-align: center;
   margin-top: -1em;
   margin-bottom: -1em;
   color: #1e2124;
+
+  /*Change fontsize for Firefox, exclusively*/
+  font-size-adjust: 0.6;
 }
 
 /*Hamburger icon*/
@@ -133,11 +137,12 @@ text-indent: 2em;
   color: #482ff7;
 }
 
-/*Clickable logo*/
+/*LOGO*/
 .nav-logo {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 10%;
+  max-width: 60px;
+  height: 1em;
   scale: 12.5%;
   margin-top: -3rem;
   margin-bottom: 1rem;

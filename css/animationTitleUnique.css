@@ -10,6 +10,9 @@
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
+  height: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
   animation: type 4s steps(50, end) !important;
   animation-fill-mode: forwards;
 }

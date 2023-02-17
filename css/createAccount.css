@@ -1,0 +1,16 @@
+/*
+  Filename: createAccount.css
+
+  History:
+  02/16/23 - created file and format the password validation widget  (GN)
+*/
+
+/*Password Validation*/
+li, ul {
+    font-size: medium;
+    list-style-type: none;
+}
+
+b {
+    color: #F7BA0B;
+}
