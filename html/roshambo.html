@@ -1,0 +1,161 @@
+<!--
+    Filename: roshambo.html
+    HTML for the Rock Paper Scissors
+    
+    History:
+    02/17/23 - created file and added content (AB)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/roshambo.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <!--Google Font APIs-->
+    <!--Title Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press%20Start%202P">
+    <!--Regular Fonts-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Signika">
+    <style>
+      #title {
+        font-family: 'Press Start 2P';
+      }
+
+      body, button {
+        font-family: 'Signika';
+      }
+    </style>
+
+    <title>Alpha Arcade</title>
+
+</head>
+<body>
+    
+    <!--Header menu
+        Needed in:
+        Library
+        Profile
+        Games
+    -->
+    <header class="header">
+
+        <!--Entire header bar-->
+        <nav class="navbar">
+
+            <!--Clickable logo-->
+            <a href="index.html" class="nav-logo">
+                <img src="../Images/pixelLogoBIG.png">
+            </a>
+
+            <!--Main Title-->
+            <h1 id="title">Arcade</h1>
+
+            <h2 id="coinImg">
+                <img src="../Images/coinBIG.png">
+            </h2>
+
+            <h2 id="walletAmt">
+                1,234 <!--Link database to this or something? idk how this works-->
+            </h2>
+
+            <!--Inside of Hamburger (shows when hamburger is clicked)-->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Log out</a>
+                </li>
+            </ul>
+
+            <!--Icon for hamburger-->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div class="gameBox">
+
+            <!--Column 1 of grid-->
+            <div class="rightArrowContainer">
+
+            </div>
+            <div class="rightArrowContainer">
+
+            </div>
+            <div class="rightArrowContainer">
+
+            </div>
+            <div class="underArrow"></div>
+
+            <!--Column 2 of grid-->
+            <div class="rockContainer">
+
+            </div>
+            <div class="scissorsContainer">
+
+            </div>
+            <div class="paperContainer">
+
+            </div>
+            <div class="underIcon"></div>
+
+            <!--Column 3 of grid-->
+            <div class="spaceBetween"></div>
+            <div class="spaceBetween"></div>
+            <div class="spaceBetween"></div>
+            <div class="gameButtonContainer">
+                
+            </div>
+
+            <!--Column 4 of grid-->
+            <div class="spaceBetween"></div>
+            <div class="spaceBetween"></div>
+            <div class="spaceBetween"></div>
+            <div class="gameButtonContainer">
+
+            </div>
+
+            <!--Column 5 of grid-->
+            <div class="rockContainer">
+
+            </div>
+            <div class="scissorsContainer">
+
+            </div>
+            <div class="paperContainer">
+
+            </div>
+            <div class="underIcon"></div>
+
+            <!--Column 6 of grid-->
+            <div class="leftArrowContainer">
+
+            </div>
+            <div class="leftArrowContainer">
+
+            </div>
+            <div class="leftArrowContainer">
+
+            </div>
+            <div class="underArrow"></div>
+
+        </div>
+    </div>
+</body>
+</html>
