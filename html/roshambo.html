@@ -88,74 +88,77 @@
         </nav>
     </header>
 
-    <div>
+    <div class="boxContainer">
         <div class="gameBox">
 
-            <!--Column 1 of grid-->
-            <div class="rightArrowContainer">
-
-            </div>
-            <div class="rightArrowContainer">
-
-            </div>
-            <div class="rightArrowContainer">
-
-            </div>
-            <div class="underArrow"></div>
-
-            <!--Column 2 of grid-->
-            <div class="rockContainer">
-
-            </div>
-            <div class="scissorsContainer">
-
-            </div>
-            <div class="paperContainer">
-
-            </div>
-            <div class="underIcon"></div>
-
-            <!--Column 3 of grid-->
-            <div class="spaceBetween"></div>
-            <div class="spaceBetween"></div>
-            <div class="spaceBetween"></div>
-            <div class="gameButtonContainer">
-                
+            <!--Row 1 of grid-->
+            <div class="boxRow">
+                <div class="rightArrowContainer">
+                    <img src="../Images/arrowRight.png">
+                </div>
+                <div class="userIconContainer">
+                    <img src="../Images/rock.png">
+                </div>
+                <div class="spaceBetween"></div>
+                <div class="spaceBetween"></div>
+                <div class="botIconContainer">
+                    <img src="../Images/rock.png">
+                </div>
+                <div class="leftArrowContainer">
+                    <img src="../Images/arrowLeft.png">
+                </div>
             </div>
 
-            <!--Column 4 of grid-->
-            <div class="spaceBetween"></div>
-            <div class="spaceBetween"></div>
-            <div class="spaceBetween"></div>
-            <div class="gameButtonContainer">
-
+            <!--Row 2 of grid-->
+            <div class="boxRow">
+                <div class="rightArrowContainer">
+                    <img src="../Images/arrowRight.png">
+                </div>
+                <div class="userIconContainer">
+                    <img src="../Images/scissors.png">
+                </div>
+                <div class="selectButtonContainer">
+                    <img class="selectButton" src="../Images/redbutton.png">
+                    <p class="belowButton">
+                        SELECT
+                    </p>
+                </div>
+                <div class="enterButtonContainer">
+                    <img class="enterButton" src="../Images/yellowbutton.png">
+                    <p class="belowButton">
+                        ENTER
+                    </p>
+                </div>
+                <div class="botIconContainer">
+                    <img src="../Images/scissors.png">
+                </div>
+                <div class="leftArrowContainer">
+                    <img src="../Images/arrowLeft.png">
+                </div>
             </div>
 
-            <!--Column 5 of grid-->
-            <div class="rockContainer">
-
+            <!--Row 3 of grid-->
+            <div class="boxRow">
+                <div class="rightArrowContainer">
+                    <img src="../Images/arrowRight.png">
+                </div>
+                <div class="userIconContainer">
+                    <img src="../Images/paper.png">
+                </div>
+                <div class="spaceBetween"></div>
+                <div class="spaceBetween"></div>
+                <div class="botIconContainer">
+                    <img src="../Images/paper.png">
+                </div>
+                <div class="leftArrowContainer">
+                    <img src="../Images/arrowLeft.png">
+                </div>
             </div>
-            <div class="scissorsContainer">
-
-            </div>
-            <div class="paperContainer">
-
-            </div>
-            <div class="underIcon"></div>
-
-            <!--Column 6 of grid-->
-            <div class="leftArrowContainer">
-
-            </div>
-            <div class="leftArrowContainer">
-
-            </div>
-            <div class="leftArrowContainer">
-
-            </div>
-            <div class="underArrow"></div>
 
         </div>
     </div>
+
+    <script src="../js/roshambo.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
