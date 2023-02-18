@@ -1,0 +1,62 @@
+/*
+  Filename: main.css
+
+  History:
+  02/17/23 - created file and added content (AB)
+*/
+
+.outerFlexGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: space-around;
+    width: 80%;
+    margin:auto;
+}
+
+.LButtonContainer {
+    width: 20%;
+}
+
+.LButton {
+    margin-left: 40%;
+    width: 20%;
+    scale: 250%;
+    cursor: pointer;
+}
+
+.gameFlexGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    width:60%;
+    height: 45em;
+    background-color: #0000FF;
+}
+
+.gameColumn {
+    height: 100%;
+    width: 2%;
+    background-color: #FF0000;
+}
+
+.RButtonContainer {
+    width:20%;
+}
+
+.RButton {
+    margin-left: 40%;
+    width: 20%;
+    scale: 250%;
+    cursor: pointer;
+}
+
+.description{
+    text-align: center;
+    font-size: x-large;
+}

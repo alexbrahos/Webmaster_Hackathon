@@ -1,0 +1,59 @@
+/*
+  Filename: profile.css
+
+  History:
+  02/17/23 - Created file and added content (AB)
+  */
+
+  /*Entire flex box*/
+.profileOuterFlexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: space-around;
+
+    margin: auto;
+}
+
+/*Div that holds pfp*/
+.profilePicture {
+    width: 45%;
+}
+
+/*pfp*/
+.pfpImage {
+    display: block;
+    margin: auto;
+    scale: 1200%;
+}
+
+/*Nested flexbox that holds stats*/
+.statsFlexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items:center;
+
+    width: 50%;
+    gap: 30%;
+}
+
+/*Everything in statsFlexBox*/
+.stats {
+    width: 20%;
+}
+
+/*Stat Titles*/
+.statName {
+    margin-top: -1rem;
+}
+
+/*Actual stats*/
+.statVal {
+    font-size: x-large;
+}

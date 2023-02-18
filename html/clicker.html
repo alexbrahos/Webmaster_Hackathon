@@ -1,12 +1,9 @@
 <!--
-    Filename: index.html
-    HTML for the Main Page
+    Filename: clicker.html
+    HTML for the Clicker game
     
     History:
-    02/14/23 - main page design (GN)
-    02/15/23 - added hamburger menu (AB)
-    02/16/23 - added coin in header (AB)
-    02/17/23 - added clicker game (AB)
+    02/17/23 - created file (AB)
 -->
 
 <!DOCTYPE html>
@@ -17,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
+    <link rel="stylesheet" href="../css/clicker.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/animations.css">
 
@@ -41,7 +39,7 @@
 </head>
 <body>
     
-    <!--Header menu
+        <!--Header menu
         Needed in:
         Library
         Profile
@@ -67,7 +65,7 @@
             <h2 id="walletAmt">
                 1,234 <!--Link database to this or something? idk how this works-->
             </h2>
-
+            
             <!--Inside of Hamburger (shows when hamburger is clicked)-->
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -90,27 +88,32 @@
         </nav>
     </header>
 
-    
+    <!--Contains game-->
     <div>
-        
-        <!--Library Buttons-->
-        <div class="listGamesFlexBox">
-            <button class="selectGameBtn" id="clickerButton">
-                <img class ="selectGame" src="../Images/clickerArt.png">
-            </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
-            </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
-            </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
-            </button>
+    <div class="outerFlexGrid">
+
+        <div class="LButtonContainer">
+            <img class="LButton" src="../Images/redbutton.png">
         </div>
+
+        <div class="gameFlexGrid">
+            <!--js will add items here-->
+            <div class="gameColumn"></div>
+        </div>
+
+        <div class="RButtonContainer">
+            <img class="RButton" src="../Images/blueButton.png">
+        </div>
+
     </div>
 
-    <script src="../js/index.js"></script>
+    <p class="description">
+        Click the red button faster than the CPU can click the blue button. First to fill the screen wins!
+    </p>
+    </div>
+
+
+    <script src="../js/clicker.js"></script>
     <script src="../js/menu.js"></script>
 </body>
 </html>
