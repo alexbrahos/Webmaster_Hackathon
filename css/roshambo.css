@@ -5,4 +5,88 @@
   02/17/23 - Created file and added content (AB)
   */
 
-  
+  .boxContainer {
+    height: 100%;
+  }
+
+  .gameBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    margin-top: 7em;
+    height: 100%;
+
+  }
+
+  .boxRow {
+    display: flex;
+    flex-direction: row;
+    margin: -5em;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+
+  .rightArrowContainer {
+    scale: 10%;
+    margin-top: -25em;
+    margin-bottom: -28.5em;
+    margin-right: -25em;
+    margin-left: -15em;
+  }
+
+  .underArrow {
+    height: 10em;
+  }
+
+  .userIconContainer, .botIconContainer {
+    scale: 10%;
+    margin-top: -25em;
+    margin-bottom: -25em;
+    margin-left: -25em;
+    margin-right: -25em;
+  }
+
+  .underIcon {
+    height: 10em;
+  }
+
+  .spaceBetween {
+    height: 10em;
+    margin-left:10em;
+    margin-right:10em;
+  }
+
+  .selectButtonContainer {
+    scale: 10%;
+    margin-left: -17em;
+    margin-right: -27em;
+    margin-top: -20em;
+    margin-bottom: -20em;
+    cursor: pointer;
+  }
+
+  .enterButtonContainer {
+    scale: 10%;
+    margin-left: -27em;
+    margin-right: -17em;
+    margin-top: -20em;
+    margin-bottom: -20em;
+    cursor: pointer;
+  }
+
+  .leftArrowContainer {
+    scale: 10%;
+    margin-top: -25em;
+    margin-bottom: -28.5em;
+    margin-left: -25em;
+  }
+
+  .belowButton{
+    font-size: 20em;
+    text-align: center;
+    margin: 0em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-bottom: -1em;
+  }

@@ -107,14 +107,11 @@ text-indent: 2em;
 
 /*Title*/
 #title {
-  font-size: 350%;
+  font-size: 4.5vw;
   text-align: center;
   margin-top: -1em;
   margin-bottom: -1em;
   color: #1e2124;
-
-  /*Change fontsize for Firefox, exclusively*/
-  font-size-adjust: 0.6;
 }
 
 /*Hamburger icon*/

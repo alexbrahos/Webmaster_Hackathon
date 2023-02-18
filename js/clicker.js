@@ -33,7 +33,7 @@ redButton.addEventListener("click", redAdd);
 blueButton.addEventListener("click", blueAdd);
 
 //set up to start
-var CPUspeed = (5 + Math.random(9));
+var CPUspeed = (4 + Math.floor(Math.random() * 5));
 var gameStarted = false;
 var gameOver = false;
 
