@@ -14,6 +14,7 @@ Clone the repository / download the zip. Then, open "index.html" to experience a
 
 The games avaliable are:
 1. Tap (free)
+  - The users try to beat the AI and tapping the button faster.
 2. Rock, Paper, Scissors
 3. Tic-Tac-Toe
 4. Color Game
