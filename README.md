@@ -1,5 +1,5 @@
 # Webmaster Hackathon
-Click this link to be redirected to the website: [Alpha Arcade](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/login.html)
+Click this link to be redirected to the website: [Alpha Arcade](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/registration/login.html)
 
 ## Prototyping
 ### [Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
