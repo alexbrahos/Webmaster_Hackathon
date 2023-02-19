@@ -1,0 +1,121 @@
+<!--
+    Filename: clicker.html
+    HTML for the Clicker game
+
+    History:
+    02/17/23 - created file (AB)
+-->
+<!--Django-->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'css/clicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animations.css' %}">
+
+    <!--Google Font APIs-->
+    <!--Title Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press%20Start%202P">
+    <!--Regular Fonts-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Signika">
+    <style>
+      #title {
+        font-family: 'Press Start 2P';
+      }
+
+      body, button {
+        font-family: 'Signika';
+      }
+    </style>
+
+    <title>Alpha Arcade</title>
+
+</head>
+<body>
+
+        <!--Header menu
+        Needed in:
+        Library
+        Profile
+        Games
+    -->
+    <header class="header">
+
+        <!--Entire header bar-->
+        <nav class="navbar">
+
+            <!--Clickable logo-->
+            <a href="https://alexbrahos.pythonanywhere.com/Alpha/mysite/templates/Webmaster_Hackathon-main/html/index.html" class="nav-logo">
+                <img src="{% static 'Images/pixelLogoBIG.png' %}">
+            </a>
+
+            <!--Main Title-->
+            <h1 id="title">Arcade</h1>
+
+            <h2 id="coinImg">
+                <img src="{% static 'Images/coinBIG.png' %}">
+            </h2>
+
+            <h2 id="walletAmt">
+                1,234 <!--Link database to this or something? idk how this works-->
+            </h2>
+
+            <!--Inside of Hamburger (shows when hamburger is clicked)-->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="https://alexbrahos.pythonanywhere.com/Alpha/mysite/templates/Webmaster_Hackathon-main/html/profile.html" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://alexbrahos.pythonanywhere.com/Alpha/mysite/templates/Webmaster_Hackathon-main/html/index.html" class="nav-link">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://alexbrahos.pythonanywhere.com/Alpha/mysite/templates/Webmaster_Hackathon-main/html/login.html" class="nav-link">Log out</a>
+                </li>
+            </ul>
+
+            <!--Icon for hamburger-->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!--Contains game-->
+    <div>
+    <div class="outerFlexGrid">
+
+        <div class="LButtonContainer">
+            <img class="LButton" src="{% static 'Images/redbutton.png' %}">
+        </div>
+
+        <div class="gameFlexGrid">
+            <!--js will add items here-->
+            <div class="gameColumn"></div>
+        </div>
+
+        <div class="RButtonContainer">
+            <img class="RButton" src="{% static 'Images/blueButton.png' %}">
+        </div>
+
+    </div>
+
+    <p class="description">
+        Click the red button faster than the CPU can click the blue button. First to fill the screen wins!
+    </p>
+    </div>
+
+
+    <script src="{% static 'js/clicker.js' %}"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
+</body>
+</html>
