@@ -1,9 +1,9 @@
 <!--
-    Filename: clicker.html
-    HTML for the Clicker game
+    Filename: tictactoe.html
+    HTML for the Tic Tac Toe game
     
     History:
-    02/17/23 - created file (AB)
+    02/18/23 - created file and added content
 -->
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
-    <link rel="stylesheet" href="../css/clicker.css">
+    <link rel="stylesheet" href="../css/tictactoe.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/animations.css">
 
@@ -39,7 +39,7 @@
 </head>
 <body>
     
-        <!--Header menu
+    <!--Header menu
         Needed in:
         Library
         Profile
@@ -68,7 +68,7 @@
             <h2 id="walletAmt">
                 1,234 <!--Link database to this or something? idk how this works-->
             </h2>
-            
+
             <!--Inside of Hamburger (shows when hamburger is clicked)-->
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -91,32 +91,21 @@
         </nav>
     </header>
 
-    <!--Contains game-->
-    <div>
-    <div class="outerFlexGrid">
-
-        <div class="LButtonContainer">
-            <img class="LButton" src="../Images/redbutton.png">
+    <div class="gameContainer">
+        <div class="gameArea">
+            <div id="block0" class="block"></div>
+            <div id="block1" class="block"></div>
+            <div id="block2" class="block"></div>
+            <div id="block3" class="block"></div>
+            <div id="block4" class="block"></div>
+            <div id="block5" class="block"></div>
+            <div id="block6" class="block"></div>
+            <div id="block7" class="block"></div>
+            <div id="block8" class="block"></div>
         </div>
-
-        <div class="gameFlexGrid">
-            <!--js will add items here-->
-            <div class="gameColumn"></div>
-        </div>
-
-        <div class="RButtonContainer">
-            <img class="RButton" src="../Images/blueButton.png">
-        </div>
-
     </div>
 
-    <p class="description">
-        Click the red button faster than the CPU can click the blue button. First to fill the screen wins!
-    </p>
-    </div>
-
-
-    <script src="../js/clicker.js"></script>
+    <script src="../js/tictactoe.js"></script>
     <script src="../js/menu.js"></script>
 </body>
 </html>

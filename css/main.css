@@ -8,6 +8,8 @@
   02/16/23 - added coin in header (AB)
   02/16/23 - added Firefox directives for FF support (GN)
   02/16/23 - buttons are now in rows of 3 (GN)
+  02/17/23 - changed css for buttons
+  02/18/23 - added prices and coins next to them
   */
 
 
@@ -58,7 +60,7 @@ text-indent: 2em;
 
   background-color: #abadaf;
   gap: 10%;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 
@@ -75,7 +77,24 @@ text-indent: 2em;
   cursor: pointer;
 }
 
-.selectGameHover{
+/* Prices */
+.gamePriceContainer {
+  width: 25%;
+  margin-top: -3em;
+  margin-bottom: 1em;
+}
+
+.coinPrice {
+  width: 15%;
+  height: 15%;
+}
+
+.gamePrice {
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+.selectGameHover {
   opacity: 0;
   width: 104%;
   height: 100%;
@@ -153,7 +172,7 @@ text-indent: 2em;
 }
 
 /*Coin image*/
-#coinImg {
+.coinImg {
   display: block;
   position: absolute;
   right: 29%;
@@ -162,6 +181,23 @@ text-indent: 2em;
   height: 40px;
   scale: 7.5%
 }
+
+#coin3, #coin2, #coin1 {
+  display: none;
+}
+
+#coin2 {
+  margin-top: -5rem;
+}
+
+#coin3 {
+  margin-top: -10rem;
+}
+
+#coin4 {
+  margin-top: -15rem;
+}
+
 
 /*Money*/
 #walletAmt {

@@ -7,6 +7,7 @@
     02/15/23 - added hamburger menu (AB)
     02/16/23 - added coin in header (AB)
     02/17/23 - added clicker game (AB)
+    02/18/23 - added roshambo and prices (AB)
 -->
 
 <!DOCTYPE html>
@@ -60,8 +61,11 @@
             <!--Main Title-->
             <h1 id="title">Arcade</h1>
 
-            <h2 id="coinImg">
-                <img src="../Images/coinBIG.png">
+            <h2 class="coinImg">
+                <img id="coin1" src="../Images/coinBIG.png">
+                <img id="coin2" src="../Images/coinStack2.png">
+                <img id="coin3" src="../Images/coinStack3.png">
+                <img id="coin4" src="../Images/coinStack4.png">
             </h2>
 
             <h2 id="walletAmt">
@@ -98,12 +102,30 @@
             <button class="selectGameBtn" id="clickerButton">
                 <img class ="selectGame" src="../Images/clickerArt.png">
             </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
+            <button class="selectGameBtn" id="roshamboButton">
+                <img class="selectGame" src="../Images/roshamboArt.png">
             </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
+            <button class="selectGameBtn" id="tictactoeButton">
+                <img class="selectGame" src="../Images/tictactoeArt.png">
             </button>
+            <div class="gamePriceContainer">
+                <p class="gamePrice">
+                    <img class="coinPrice" src="../Images/coinBig.png">
+                    FREE
+                </p>
+            </div>
+            <div class="gamePriceContainer">
+                <p class="gamePrice">
+                    <img class="coinPrice" src="../Images/coinBig.png">
+                    50
+                </p>
+            </div>
+            <div class="gamePriceContainer">
+                <p class="gamePrice">
+                    <img class="coinPrice" src="../Images/coinBig.png">
+                    100
+                </p>
+            </div>
             <button class="selectGameBtn">
                 <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
             </button>
