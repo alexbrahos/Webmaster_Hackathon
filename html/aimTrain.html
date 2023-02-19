@@ -1,13 +1,9 @@
 <!--
-    Filename: index.html
-    HTML for the Main Page
+    Filename: aimTrain.html
+    HTML for the coin clicking game
     
     History:
-    02/14/23 - main page design (GN)
-    02/15/23 - added hamburger menu (AB)
-    02/16/23 - added coin in header (AB)
-    02/17/23 - added clicker game (AB)
-    02/18/23 - added roshambo, prices, and aimTrain (AB)
+    02/18/23 - created file (AB)
 -->
 
 <!DOCTYPE html>
@@ -18,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
+    <link rel="stylesheet" href="../css/aimTrain.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/animations.css">
 
@@ -42,7 +39,7 @@
 </head>
 <body>
     
-    <!--Header menu
+        <!--Header menu
         Needed in:
         Library
         Profile
@@ -71,7 +68,7 @@
             <h2 id="walletAmt">
                 1,234 <!--Link database to this or something? idk how this works-->
             </h2>
-
+            
             <!--Inside of Hamburger (shows when hamburger is clicked)-->
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -94,57 +91,16 @@
         </nav>
     </header>
 
-    
-    <div>
-        
-        <!--Library Buttons-->
-        <div class="listGamesFlexBox">
-            <button class="selectGameBtn" id="clickerButton">
-                <img class ="selectGame" src="../Images/clickerArt.png">
-            </button>
-            <button class="selectGameBtn" id="roshamboButton">
-                <img class="selectGame" src="../Images/roshamboArt.png">
-            </button>
-            <button class="selectGameBtn" id="tictactoeButton">
-                <img class="selectGame" src="../Images/tictactoeArt.png">
-            </button>
-            <div class="gamePriceContainer">
-                <p class="gamePrice">
-                    <img class="coinPrice" src="../Images/coinBig.png">
-                    FREE
-                </p>
-            </div>
-            <div class="gamePriceContainer">
-                <p class="gamePrice">
-                    <img class="coinPrice" src="../Images/coinBig.png">
-                    50
-                </p>
-            </div>
-            <div class="gamePriceContainer">
-                <p class="gamePrice">
-                    <img class="coinPrice" src="../Images/coinBig.png">
-                    100
-                </p>
-            </div>
-            <button class="selectGameBtn" id="aimTrainButton">
-                <img class="selectGame" src="../Images/aimTrainArt.png">
-            </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
-            </button>
-            <button class="selectGameBtn">
-                <img class="selectGameHover" src="../Images/gray_overlay.png" alt="Image hover">
-            </button>
-            <div class="gamePriceContainer">
-                <p class="gamePrice">
-                    <img class="coinPrice" src="../Images/coinBig.png">
-                    300
-                </p>
-            </div>
+    <!--divs for entire game, most of work done in js-->
+    <div class="gameBoxContainer">
+        <div class="gameBox">
         </div>
     </div>
+    <p class="description">
+        Click the coins as they appear. Miss 5 and you lose!
+    </p>
 
-    <script src="../js/index.js"></script>
+    <script src="../js/aimTrain.js"></script>
     <script src="../js/menu.js"></script>
 </body>
 </html>

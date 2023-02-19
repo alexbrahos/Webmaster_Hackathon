@@ -1,0 +1,40 @@
+/*
+  Filename: aimTrain.css
+
+  History:
+  02/18/23 - created file and added content (AB)
+*/
+
+.gameBoxContainer{
+    width: 45vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+.gameBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    align-items: center;
+    align-content: center;
+}
+
+.gameCell{
+    width: 5.5555555%;
+    height: 5.5555555%;
+    visibility: hidden;
+}
+
+.description{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 2vh;
+}
+
+.gameIcon{
+    height:100%;
+    width:100%;
+}
