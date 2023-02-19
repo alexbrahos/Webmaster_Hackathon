@@ -1,5 +1,5 @@
 # Webmaster Hackathon
-Click this link to be redirected to the website: [Alpha Arcade](http://alexbrahos.pythonanywhere.com/)
+Click this link to be redirected to the website: [Alpha Arcade](https://alexbrahos.pythonanywhere.com/Alpha/mysite/templates/Webmaster_Hackathon-main/html/index.html)
 
 ## Prototyping
 ### [Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
@@ -10,10 +10,10 @@ Clone the repository / download the zip. Then, open "index.html" to experience a
 
 ## Documentation 
 ### Summary
-*Alpha Arcade* is a web application that allows for the user to play games. Users may want to login to keep log of their money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across updated version of browsers and screen sizes; older browsers were not tested and may have problems supporting certain design choices made. 
+*Alpha Arcade* is a web application that allows for the user to play games. Users may want to login to keep log of their money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across relatively updated version of browsers, however *Alpha Arcade* is not mobile-friendly. Older browsers were not tested and may have problems supporting certain design choices made. 
 
 The games avaliable are:
-1. Tap (free)
+1. Tap (free): The users try to beat the AI and tapping the button faster.
 2. Rock, Paper, Scissors
 3. Tic-Tac-Toe
 4. Color Game
