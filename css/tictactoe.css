@@ -1,0 +1,58 @@
+/*
+  Filename: tictactoe.css
+
+  History:
+  02/18/23 - created file and added contents (AB)
+*/
+
+.gameContainer {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameArea {
+    display: grid;
+    width: 37.5rem;
+    height: 37.5rem;
+    grid-template-columns: auto auto auto;
+}
+
+.block {
+    display: flex;
+    width: 12.5rem;
+    height: 12.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+.block:hover {
+    cursor: pointer;
+    background: #a7a4e0
+}
+
+.occupied:hover {
+    background: #514689;
+    cursor: default;
+}
+
+#block0, #block1, #block2 {
+    border-top: none;
+}
+
+#block0, #block3, #block6 {
+    border-left: none;
+}
+
+#block6, #block7, #block8 {
+    border-bottom: none;
+}
+
+#block2, #block5, #block8 {
+    border-right: none;
+}
