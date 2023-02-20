@@ -7,7 +7,7 @@ Click this link to be redirected to the website: [Alpha Arcade](https://alphahac
 ### [Database Structure v2](hhttps://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png)
 #### NOTE ABOUT FILES❗️❗️
 The entire repository holds the client-side-only files. The zip file contains the entire website's source files with server-side operations and frameworking.
-To experience a static version of *Alpha Arcade*, clone the respository and open "index.html." To experience the full functionality, click the link; source files are in the zip.
+To experience a static version of *Alpha Arcade*, clone the respository and open "index.html." To experience the full functionality, click the link; all of the now-Django-i-fied sources files are included, as well as Django structural files. 
 **If you are looking at the static version, make sure to clear your cookies often, or certain browsers will not reflect your changes 100% of the time.**
 
 ## Documentation 
