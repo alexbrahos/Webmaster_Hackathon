@@ -37,7 +37,7 @@ To keep the theme of the website persistent, as well as to prevent plagiarism, a
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. No player who registers under the 'Create Account' menu may gain is_staff or is_superuser permissions. This may only be done throught the Django administrator, who has access to grant permissions, update, and delete users.
 
 ### Data Structure
-To keep user login and accredited information persistent, cookies are used. All user information are appropriately stored in a relational database. Because of the complexity of Dganjo models, the original [ERD](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg) was [simplified](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png).
+To keep user login and accredited information persistent, cookies are used. All user information are appropriately stored in a relational database. Because of the complexity of Dganjo models, the [original](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg) ERD was [simplified](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png).
 <br>
 The USER table is an implementation of Django's AbstractBaseUser class, which requires for the user to define multiple additional fields they may not need. For *Alpha Arcade,* these member variables were email, date_joined, and last_login. These variables were defaulted to 'None.'
 ### Work Flow 
