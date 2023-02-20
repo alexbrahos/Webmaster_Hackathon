@@ -64,18 +64,14 @@ The USER table is an implementation of Django's AbstractBaseUser class, which re
 <br>3.1.1 User plays the game 
 <br>3.1.1.1 User wins
 <br>3.1.1.1.1 User wins in-game currency 
-<br>3.1.1.1.1.1 User may replay or return home
+<br>3.1.1.1.1.1 User may eturn home
 <br>3.1.1.1.1.1.1 User returns home
 <br>3.1.1.1.1.1.1.1 Redirected to 2.1
-<br>3.1.1.1.1.1.2 User replays game
-<br>3.1.1.1.1.1.2.1 Redirected to 3.1
 <br>3.1.1.2 User loses
 <br>3.1.1.2.1 User wins no in-game currency
-<br>3.1.1.2.1.1 User may replay or return home 
+<br>3.1.1.2.1.1 User may return home 
 <br>3.1.1.2.1.1.1 User returns home
 <br>3.1.1.2.1.1.1.1 Redirected to 2.1
-<br>3.1.1.2.1.1.2 User replays hame
-<br>3.1.1.2.1.1.2.1 Redirected to 3.1
 #### Create an Account
 <br>4.1 Username is taken or passwords do not match
 <br>4.1.1 User must try again
