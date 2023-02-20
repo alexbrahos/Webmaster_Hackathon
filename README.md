@@ -30,8 +30,8 @@ The jQuery plug-in version used is 1.19.5.
 #### Security
 A side effect of allowing the users to input their information in the Create Account page is that the chance for a SQL injection increases. Because Django is the framework, Django Object Relational Mapping (ORM) is an available measure that has stong protection against SQL injections. *Alpha Arcade* created its ALPHA database using Djano's models, so no operations are done without the safety of the API. 
 Another side effect of the ORM is that all passwords are hashed. This, alongside the strict client and server validation requirements, keep the user safe throughout their session. A "session" is the duratation is logged in. This duration is also the lifespan of the cookie used to grant the user access to *Alpha Arcade* pages. The user may remove the cookies anytime by selecting the "log out" option in the hamburger menu.
-#### Images 
-To keep the theme of the website persistent, as well as to prevent plagiarism, all images were made by hand.
+#### Images & Fonts
+To keep the theme of the website persistent, as well as to prevent plagiarism, all images were made by hand. All fonts were taken from Google's publically avaliable [API](https://developers.google.com/fonts)
 <br>
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. No player who registers under the 'Create Account' menu may gain is_staff or is_superuser permissions. This may only be done throught the Django administrator, who has access to grant permissions, update, and delete users.
