@@ -40,7 +40,7 @@ There is only one type of user—the players. Players may want to create an acco
 ### Data Structure
 To keep user login and accredited information persistent, cookies are used. All user information are appropriately stored in a relational database. Because of the complexity of Dganjo models, the [original](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg) ERD was [simplified](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png).
 <br>
-The USER table is an implementation of Django's AbstractBaseUser class, which requires for the user to define multiple additional fields they may not need. For *Alpha Arcade,* these member variables were email, date_joined, and last_login. These variables were defaulted to 'None.'
+The USER table is an implementation of Django's AbstractBaseUser class, which requires for the user to define multiple additional fields they may not need. For *Alpha Arcade,* these member variables were email, date_joined, and last_login. These variables were defaulted to 'None.' Because the username must be a unique primary key, no two usernames will be used concurrently. Additionally, because the passwords are hashed, there is no way to retreive a forgotten password. 
 ### Work Flow
 The functions available are: Login, Play Game, Buy Game, View Profile, Log Out, or Create Account.
 #### Login 
