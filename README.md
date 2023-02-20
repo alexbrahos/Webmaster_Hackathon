@@ -10,6 +10,8 @@ The entire repository holds the client-side-only files. The zip file contains th
 To experience a static version of *Alpha Arcade*, clone the respository and open "index.html." To experience the full functionality, click the link; all of the now-Django-i-fied sources files are included, as well as Django structural files. 
 **If you are looking at the static version, make sure to clear your cookies often, or certain browsers will not reflect your changes 100% of the time.**
 
+If you're creating an account or logging in, and you get an error, simply clear your cookies and retry.
+
 ## Documentation 
 ### Summary
 *Alpha Arcade* is a web application that allows for the user to create accounts, play games, and earn money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across relatively updated version of browsers, however *Alpha Arcade* is not mobile-friendly. Older browsers were not tested and may have problems supporting certain design choices made. 
