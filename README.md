@@ -1,9 +1,10 @@
 # Webmaster Hackathon
 Click this link to be redirected to the website: [Alpha Arcade](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/registration/login.html)
 
-## Prototyping
+## Prototyping Documents
 ### [(Unprofessional) Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
-### [Final Database Structure](hhttps://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png)
+### [Database Structure v1](hhttps://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
+### [Database Structure v2](hhttps://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png)
 #### NOTE ABOUT FILES❗️❗️
 The entire repository holds the client-side-only files. The zip file contains the entire website's source files with server-side operations and frameworking.
 To experience a static version of *Alpha Arcade*, clone the respository and open "index.html." To experience the full functionality, click the link; source files are in the zip.
