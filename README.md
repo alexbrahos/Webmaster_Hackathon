@@ -2,7 +2,7 @@
 Click this link to be redirected to the website: [Alpha Arcade](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/registration/login.html)
 
 ## Prototyping
-### [Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
+### [(Unprofessional) Page Design & Flow](https://indiana-my.sharepoint.com/:p:/g/personal/gtnguyen_iu_edu/EXiy6fiQHO5Kk-9V8cNp_3sBMFEhdBp_koodIPwh8Hpe1A?e=6vHVMn)
 ### [Database Structure](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg)
 #### NOTE TO COLLABORATERS❗️❗️
 Clone the repository / download the zip. Then, open "index.html" to experience a static version of the website. 
