@@ -48,14 +48,17 @@ The USER table is an implementation of Django's AbstractBaseUser class, which re
 <br>1.1.1.1.1 Redirected to 2.1
 <br>1.1.2 Incorrect credentials 
 <br>1.1.2.1 Redirected to 1.1
+<br>1.2 Does not have an Account
+<br>1.2.1 Redirected to 4.1
 #### Main
 <br>2.1 Library
-<br>2.1.1 Select a game
+<br>2.1.1 Select a permissable game
 <br>2.1.1.1 Redirected to GAME
-<br>2.2 Store
-<br>2.2.1 Redirected to STORE
-<br>2.3 Profile
-<br> Redirected to PROFILE
+<br>2.2 Select a non-permissable game
+<br>2.2.1 User has enough money
+<br>2.2.1.1 User now has access to the game, currency is appropiately taken away
+<br>2.2.2 User does not have enough money
+<br>2.2.2.1 Nothing happens
 #### Playing a Game 
 <br>3.1 Game loads 
 <br>3.1.1 User plays the game 
@@ -73,19 +76,12 @@ The USER table is an implementation of Django's AbstractBaseUser class, which re
 <br>3.1.1.2.1.1.1.1 Redirected to 2.1
 <br>3.1.1.2.1.1.2 User replays hame
 <br>3.1.1.2.1.1.2.1 Redirected to 3.1
-#### Store
-<br>4.1 Store loads
-<br>4.1.1 User selects a game
-<br>4.1.1.1 User purchases game 
-<br>4.1.1.1.1 User has enough in-game currency
-<br>4.1.1.1.1.1 Game permission is unlocked
-<br>4.1.1.1.1.1.1 Redirected to 4.1
-<br>4.1.1.1.2 User does not have enough in-game currency
-<br>4.1.1.1.2.1 Redirected to 4.1
+#### Create an Account
+<br>4.1 Username is taken or passwords do not match
+<br>4.1.1 User must try again
+<br>4.2 Username is not taken, passwords match
+<br>4.2.1 Account is made in ALPHA
+<br>4.2.1.1 User is logged in
+<br>4.2.1.1.1 Redirected to 2.1
 #### Profile 
 <br>5.1 Profile loads
-<br>5.1.1 User uploads image 
-<br>5.1.1.1 Image is successfully uploaded 
-<br>5.1.1.1.1 Profile picture is changed 
-<br>5.1.1.2 Image is not successfully uploaded 
-<br>5.1.1.2.1 Profile picture is unchanged
