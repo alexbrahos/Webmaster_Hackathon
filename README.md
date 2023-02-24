@@ -1,4 +1,4 @@
-# Summary of the Project
+# README.md
 :trophy: Arcade was a winning entry in IUPUI's 2023 Full-Stack Webmasters Hackathon. 
 
 
