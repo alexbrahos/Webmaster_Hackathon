@@ -46,6 +46,8 @@ To keep the theme of the website persistent, as well as to prevent plagiarism, a
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. No player who registers under the 'Create Account' menu may gain is_staff or is_superuser permissions. This may only be done throught the Django administrator, who has access to grant permissions, update, and delete users.
 
+Lastly, a user is restricted from entering any games if Django cannot find the csrf session cookie. The only pages not restricted are the registration pages. There is a bug where if the user logs in again after having already logged in, the user is told that the csrf token is corrupted. The current solution to this is to head straight to the index.html (permissions are already granted to access this page), or to clear cookies and login again.
+
 ### Data Structure
 To keep user login and accredited information persistent, cookies are used. All user information are appropriately stored in a relational database. Because of the complexity of Dganjo models, the [original](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd.jpg) ERD was [simplified](https://github.com/alexbrahos/Webmaster_Hackathon/blob/main/erd_updated.png).
 <br>
