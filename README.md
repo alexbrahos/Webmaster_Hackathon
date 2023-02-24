@@ -1,5 +1,5 @@
 # Summary
-:trophy: Arcade was a winning entry in IUPUI's 2023 Full-Stack Webmasters Hackathon. 
+:trophy: Alpha Arcade was a winning entry in IUPUI's 2023 Full-Stack Webmasters Hackathon. 
 
 Below is the documentation for the hackathon, which includes the database structure, framework, and security measures.
 
