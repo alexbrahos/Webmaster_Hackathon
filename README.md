@@ -1,5 +1,5 @@
 # Summary
-:trophy: Alpha Arcade was a winning entry in IUPUI's 2023 Full-Stack Webmasters Hackathon. 
+:trophy: Winning entry in IUPUI's 2023 Full-Stack Webmasters Hackathon. 
 
 Below is the documentation for the hackathon, which includes the database structure, framework, and security measures.
 
@@ -28,6 +28,8 @@ The games avaliable are:
 2. Rock, Paper, Scissors
 3. Tic-Tac-Toe
 4. Aim-Trainer 
+
+Please note that coins are not awarded to users until they hit the "next" button after a game finishes.
 
 ###  Specifics
 #### Framework
