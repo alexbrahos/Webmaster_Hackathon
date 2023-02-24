@@ -29,7 +29,7 @@ The games avaliable are:
 3. Tic-Tac-Toe
 4. Aim-Trainer 
 
-Please note that coins are not awarded to users until they hit the "next" button after a game finishes.
+_Please note that coins are not awarded to users until they hit the "next" button after a game finishes._
 
 ###  Specifics
 #### Framework
