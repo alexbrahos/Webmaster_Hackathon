@@ -1,4 +1,8 @@
-# Webmaster Hackathon
+# Summary of the Project
+:trophy: Arcade was a winning entry in IUPUI's 2023 Full-Stack Webmasters Hackathon. 
+
+
+# Hackathon Documentation
 Click this link to be redirected to the website: [Alpha Arcade](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/registration/login.html)
 
 ## Prototyping Documents
