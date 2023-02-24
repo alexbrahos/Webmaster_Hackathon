@@ -3,7 +3,7 @@
 
 Below is the documentation for the hackathon, which includes the database structure, framework, and security measures.
 
-# Hackathon Documentation
+# Webmaster's Hackathon Documentation
 Click this link to be redirected to the website: [Alpha Arcade](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/registration/login.html)
 
 ## Prototyping Documents
