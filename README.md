@@ -13,9 +13,12 @@ Click this link to be redirected to the website: [Alpha Arcade](https://alphahac
 #### NOTE ABOUT FILES❗️❗️
 The entire repository holds the client-side-only files. The zip file contains the entire website's source files with server-side operations and frameworking.
 To experience a static version of *Alpha Arcade*, clone the respository and open "index.html." To experience the full functionality, click the link; all of the now-Django-i-fied sources files are included, as well as Django structural files. 
-**If you are looking at the static version, make sure to clear your cookies often, or certain browsers will not reflect your changes 100% of the time.**
 
-If you're creating an account or logging in, and you get an error, simply clear your cookies and retry.
+
+
+If you're creating an account or logging in, and you get an error, there's two things you can do. 
+1. Visit [the main menu](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/index.html). If you are able to access this page, then you're all good to go. 
+2. If #1 does not work, then delete your cookies and try logging in again. 
 
 ## Documentation 
 ### Summary
