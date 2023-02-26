@@ -21,10 +21,10 @@ If you're creating an account or logging in, and you get an error, there's two t
 2. If #1 does not work, then delete your cookies and try logging in again. 
 
 ## Documentation 
+Creators: Grace Nguyen, Alex Brahos
 ### Summary
 *Alpha Arcade* is a web application that allows for the user to create accounts, play games, and earn money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across relatively updated version of browsers, however *Alpha Arcade* is not mobile-friendly. Older browsers were not tested and may have problems supporting certain design choices made. 
 
-Creators: Grace Nguyen, Alex Brahos
 
 The games avaliable are:
 1. Clicker (free): The users try to beat the AI and tapping the button faster.
