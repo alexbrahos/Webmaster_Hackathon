@@ -20,6 +20,8 @@ If you're creating an account or logging in, and you get an error, there's two t
 1. Visit [the main menu](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/index.html). If you are able to access this page, then you're all good to go. 
 2. If #1 does not work, then delete your cookies and try logging in again. 
 
+There is also a bug where usernames with spaces will cause the backend to be unable to pull up the user information. To deal with bug, please attempt to create a new account with no spaces.
+
 ## Documentation 
 Creators: Grace Nguyen, Alex Brahos
 ### Summary
