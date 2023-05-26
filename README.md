@@ -20,11 +20,13 @@ If you're creating an account or logging in, and you get an error, there's two t
 1. Visit [the main menu](https://alphahackathon.pythonanywhere.com/mysite/alpha/templates/index.html). If you are able to access this page, then you're all good to go. 
 2. If #1 does not work, then delete your cookies and try logging in again. 
 
+There is also a bug where usernames with spaces will cause the backend to be unable to pull up the user information. To deal with bug, please attempt to create a new account with no spaces.
+
 ## Documentation 
+Creators: Grace Nguyen, Alex Brahos
 ### Summary
 *Alpha Arcade* is a web application that allows for the user to create accounts, play games, and earn money. The money is used to buy and unlock more games. The website was tested across multiple browsers (Microsoft Edge, Firefox, Chrome) and multiple screen sizes (mobile, desktop). Overall, the website scales well across relatively updated version of browsers, however *Alpha Arcade* is not mobile-friendly. Older browsers were not tested and may have problems supporting certain design choices made. 
 
-Creators: Grace Nguyen, Alex Brahos
 
 The games avaliable are:
 1. Clicker (free): The users try to beat the AI and tapping the button faster.
@@ -46,7 +48,7 @@ The jQuery plug-in version used is 1.19.5.
 A side effect of allowing the users to input their information in the Create Account page is the lack of protection against a SQL injection attack. Because Django is the framework, Django Object Relational Mapping (ORM) is an available measure that has stong protection against SQL injections. *Alpha Arcade* created its ALPHA database using Djano's models, so no operations are done without the safety of the API. 
 Another side effect of the ORM is that all passwords are hashed. This, alongside the strict client and server validation requirements, keep the user safe throughout their session. A "session" is the duratation a user is logged in. This duration is also the lifespan of the cookie used to grant the user access to *Alpha Arcade* pages. The user may remove the cookies anytime by selecting the "log out" option in the hamburger menu.
 #### Images & Fonts
-To keep the theme of the website persistent, as well as to prevent plagiarism, all images were made by hand. All fonts were taken from Google's publically avaliable [API](https://developers.google.com/fonts)
+To keep the theme of the website persistent, as well as to prevent plagiarism, all images were made by hand. All fonts were taken from Google's publically avaliable [API](https://developers.google.com/fonts).
 <br>
 ### User Cases
 There is only one type of user—the players. Players may want to create an account, as an account will ensure that in-game currency and games bought will be maintained outside of page refreshment. No player who registers under the 'Create Account' menu may gain is_staff or is_superuser permissions. This may only be done throught the Django administrator, who has access to grant permissions, update, and delete users.
